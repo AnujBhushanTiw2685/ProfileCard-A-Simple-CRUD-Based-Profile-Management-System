@@ -1,0 +1,78 @@
+_id ka first 3 bytes timestamp denote karta hai, 
+baaki machine aur process se related information hoti hai
+
+
+.find -> array deta hai
+.findOne -> objecty deta hai
+
+
+mongoDB crud part 1:
+
+// const express = require('express');
+// const app = express();
+
+// const userModel = require('./usermodel');
+
+// app.get('/', (req, res) => {
+//     res.send("hey");
+// })
+
+// app.get('/create', async (req, res) => {
+//     let createduser = await userModel.create({
+//         name: "Anuja",
+//         email: "anujatiwari@gmail.com",
+//         username: "anuja"
+//     })
+
+//     res.send(createduser);
+// })
+
+// app.get('/update', async (req, res) => {
+   
+//     let updatedUser = await userModel.findOneAndUpdate({username: "anuj"}, {name : "Anuj Bhushan Tiwari"}, {new: true})
+//     res.send(updatedUser);
+// })
+
+// app.get("/read", async (req, res) => {
+//     let users = await userModel.find({username: "anuj"});
+//     res.send(users);
+// })
+
+// app.get("/delete", async (req, res) => {
+//     let users = await userModel.findOneAndDelete({username: "anuja"});
+//     res.send(users);
+// })
+
+// app.listen(3000);
+
+
+// --------(usermodel.js file)--------- //
+// const mongoose = require('mongoose');
+// mongoose.connect(`mongodb://127.0.0.1:27017/mongopractice`);
+
+// const userSchema = mongoose.Schema({
+//     name: String,
+//     username: String,
+//     email: String
+// })
+
+// module.exports = mongoose.model("user", userSchema);
+
+
+
+//------------------------------***------------------------------------------//
+
+***Authentication and Authorization***
+
+1. user ko profile dene se pehle ye check karna hota hai ki user hai kon- "Authentication" 
+
+2. authorized to perform some task which are only allowed to be executed by the admin - "Authorization" 
+
+
+*server har baar bhool jata hai ki aap kon ho , ab kyuki
+wo bhool jata hai to wo har baar har kaam ke liye aapse poochega ki aap kon ho
+
+* sabse pehle hamein kuch cheezein seekhni hai alag alag
+i) cookie set kaise karein?
+ii) bcrypt kaise use karte hai for password encryption and decryption
+iii) jwt kya hai and jwt mein data kaise store karein and baahar nikaalein
