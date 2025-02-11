@@ -21,36 +21,40 @@ git clone https://github.com/your-username/profilecard-manager.git
 cd profilecard-manager
 
 
-2️⃣ Install Dependencies
+2️⃣ **Install Dependencies**
 
 npm install
-3️⃣ Set Up Environment Variables
+
+
+3️⃣ **Set Up Environment Variables**
+
 Create a .env file in the root directory and add:
 
-env
-Copy
-Edit
+
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 
-4️⃣ Run the Server:
+4️⃣ **Run the Server:**
 
 npm start
 Server will be running on: http://localhost:5000
 
-🎨 Features
+🎨 **Features**
+
 Express.js for handling routes and middleware.
 EJS for rendering profile creation forms dynamically.
 MongoDB for storing user profile data.
 Multer (if used) for handling profile picture uploads.
 
-📦 Dependencies
+📦 **Dependencies**
+
 Express.js – Web framework for routing and handling requests.
 EJS – Used for rendering dynamic web pages.
 Mongoose – MongoDB ODM for database interaction.
 Multer (Optional) – Middleware for file uploads.
 dotenv – For managing environment variables.
-🛡️ License
+
+🛡️ **License**
 This project is licensed under the MIT License.
 
-💡 Questions or Contributions? Feel free to open an issue or submit a pull request! 🚀
+💡 **Questions or Contributions?** Feel free to open an issue or submit a pull request! 🚀
